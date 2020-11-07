@@ -1,0 +1,19 @@
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.exe
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.deps.json
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.runtimeconfig.json
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.runtimeconfig.dev.json
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.dll
+C:\Users\Madeline\Documents\DEV\Star Wars\bin\Debug\netcoreapp3.1\Star Wars.pdb
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.csprojAssemblyReference.cache
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Stars.g.cs
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars_MarkupCompile.cache
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars_MarkupCompile.lref
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Stars.baml
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.g.resources
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.AssemblyInfoInputs.cache
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.AssemblyInfo.cs
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.csproj.CoreCompileInputs.cache
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.dll
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.pdb
+C:\Users\Madeline\Documents\DEV\Star Wars\obj\Debug\netcoreapp3.1\Star Wars.genruntimeconfig.cache

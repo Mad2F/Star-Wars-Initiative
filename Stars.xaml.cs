@@ -24,5 +24,14 @@ namespace Star_Wars
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// CloseButton_Clicked
+        /// </summary>
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }
