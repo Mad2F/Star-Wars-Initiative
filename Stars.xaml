@@ -3,15 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Star_Wars"
+        xmlns:local="clr-namespace:Star_Wars" 
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
         WindowState="Maximized" 
         WindowStartupLocation="CenterScreen"
         Title="Star Wars Initiative">
 
+    <Window.Resources>
+        <local:PercentageConverter x:Key="PercentageConverter"/>
+        <local:HeightConverter x:Key="HeightConverter"/>
+        <System:Double x:Key="MenuHeight">20</System:Double>
+    </Window.Resources>
 
     <DockPanel x:Name="RootWindow">
         <DockPanel x:Name="TitleBar" DockPanel.Dock="Top">
-            <Menu DockPanel.Dock="Top">
+            <Menu DockPanel.Dock="Top"  Height="{StaticResource MenuHeight}">
                 <MenuItem Header="_Menu">
                     <MenuItem Header="_Quit" Click="CloseButton_Click"/>
                 </MenuItem>
@@ -25,9 +31,91 @@
                     <MenuItem Header="_Configure Players"/>
                 </MenuItem>
             </Menu>
-
-        </DockPanel>
-
+            <Canvas x:Name="canvas" 
+                    Top ="{StaticResource MenuHeight}" 
+                    Height="{Binding 
+                       Converter={StaticResource HeightConverter}, 
+                       ElementName=RootWindow, 
+                       Path=ActualHeight, 
+                       ConverterParameter={StaticResource MenuHeight}}">
+                <Button Canvas.Left="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=80}">Top left</Button>
+                <Button Canvas.Right="10">Top right</Button>
+                <Rectangle Panel.ZIndex="1" Fill="LightBlue" Canvas.Left="25" Width="50" Height="50" />
+                <Rectangle Panel.ZIndex="2" Fill="LightCoral"                      
+                       Canvas.Top="0" 
+                       Canvas.Left="0" 
+                     Width="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Height="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" />
+                <Rectangle Panel.ZIndex="3" Fill="AliceBlue"                      
+                       Canvas.Top="0" 
+                       Canvas.Left="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Width="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Height="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" />
+                <Rectangle Panel.ZIndex="4" Fill="LightGoldenrodYellow"                      
+                       Canvas.Top="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" 
+                       Canvas.Left="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Width="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Height="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" />
+                <Rectangle Panel.ZIndex="5" Fill="LightSeaGreen"                      
+                       Canvas.Top="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" 
+                       Canvas.Left="0" 
+                     Width="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualWidth, 
+                       ConverterParameter=50}" 
+                     Height="{Binding 
+                       Converter={StaticResource PercentageConverter}, 
+                       ElementName=canvas, 
+                       Path=ActualHeight, 
+                       ConverterParameter=50}" />
+            </Canvas>
+            
+            </DockPanel>
         <ContentControl Content="{Binding CurrentPage}" />
     </DockPanel>
 
